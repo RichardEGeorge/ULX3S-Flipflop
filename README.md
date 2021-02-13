@@ -1,6 +1,6 @@
 # ULX3S Flip-Flop
 
-This is another simple project on the ULX3S board. This code connects the Left Down and Right buttons on the board to the Data, Clock, and Reset lines of a flip-flop defined in a separate module. Pressing "Down" while holding "Left" clocks a 1 bit into the flip-flop. Pressing "Right" triggers a reset. The source code is below:
+This is another simple project on the ULX3S board. This code connects the Left Down and Right buttons on the board to the Data, Clock, and Reset lines of a flip-flop defined in a separate module. Pressing "Down" while holding "Left" clocks a 1 bit into the flip-flop. Pressing "Right" triggers a reset. The code borrows from [DoctorWkt](https://github.com/DoctorWkt) to handle the specifics of programming the ULX3S-85F board. The source code is below:
 
 ```verilog
 module top(input [6:0] btn,
